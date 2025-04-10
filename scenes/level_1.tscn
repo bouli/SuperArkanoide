@@ -1,0 +1,354 @@
+[gd_scene load_steps=10 format=3 uid="uid://cyh5sk4uq12nv"]
+
+[ext_resource type="PackedScene" uid="uid://dq5ak156c2j34" path="res://scenes/environment.tscn" id="1_rus8k"]
+[ext_resource type="PackedScene" uid="uid://bvym4fq3yg5bd" path="res://scenes/player.tscn" id="2_5xbjy"]
+[ext_resource type="PackedScene" uid="uid://clyw2tmfgj2sg" path="res://scenes/ball.tscn" id="3_4nkto"]
+[ext_resource type="PackedScene" uid="uid://b0h10taeflr2s" path="res://scenes/block.tscn" id="4_4nkto"]
+[ext_resource type="Texture2D" uid="uid://d32mrrlvd78tk" path="res://sprites/RedBlock.png" id="5_4nkto"]
+[ext_resource type="Texture2D" uid="uid://nm7aclwnu1r4" path="res://sprites/YellowBlock.png" id="5_e3sih"]
+[ext_resource type="Texture2D" uid="uid://bi07xcbeokot7" path="res://sprites/BlueBlock.png" id="5_fcfvj"]
+[ext_resource type="Texture2D" uid="uid://dgglxopanbln" path="res://sprites/GreenBlock.png" id="7_2y5yt"]
+[ext_resource type="Texture2D" uid="uid://c4p5rmtw2v008" path="res://sprites/PurpleBlock.png" id="8_2os1m"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Environment" parent="." instance=ExtResource("1_rus8k")]
+metadata/_edit_lock_ = true
+
+[node name="Player" parent="." instance=ExtResource("2_5xbjy")]
+position = Vector2(320, 432)
+
+[node name="Ball" parent="." instance=ExtResource("3_4nkto")]
+position = Vector2(320, 401)
+
+[node name="Yellow" type="Node2D" parent="."]
+position = Vector2(0, 480)
+
+[node name="Block33" parent="Yellow" instance=ExtResource("4_4nkto")]
+position = Vector2(0, -432)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Yellow/Block33"]
+texture = ExtResource("5_e3sih")
+centered = false
+
+[node name="Block34" parent="Yellow" instance=ExtResource("4_4nkto")]
+position = Vector2(80, -430)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Yellow/Block34"]
+texture = ExtResource("5_e3sih")
+centered = false
+
+[node name="Block35" parent="Yellow" instance=ExtResource("4_4nkto")]
+position = Vector2(160, -432)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Yellow/Block35"]
+texture = ExtResource("5_e3sih")
+centered = false
+
+[node name="Block36" parent="Yellow" instance=ExtResource("4_4nkto")]
+position = Vector2(240, -432)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Yellow/Block36"]
+texture = ExtResource("5_e3sih")
+centered = false
+
+[node name="Block37" parent="Yellow" instance=ExtResource("4_4nkto")]
+position = Vector2(320, -432)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Yellow/Block37"]
+texture = ExtResource("5_e3sih")
+centered = false
+
+[node name="Block38" parent="Yellow" instance=ExtResource("4_4nkto")]
+position = Vector2(400, -432)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Yellow/Block38"]
+texture = ExtResource("5_e3sih")
+centered = false
+
+[node name="Block39" parent="Yellow" instance=ExtResource("4_4nkto")]
+position = Vector2(480, -432)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Yellow/Block39"]
+texture = ExtResource("5_e3sih")
+centered = false
+
+[node name="Block40" parent="Yellow" instance=ExtResource("4_4nkto")]
+position = Vector2(560, -432)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Yellow/Block40"]
+texture = ExtResource("5_e3sih")
+centered = false
+
+[node name="Blue" type="Node2D" parent="."]
+position = Vector2(0, 240)
+
+[node name="Block25" parent="Blue" instance=ExtResource("4_4nkto")]
+position = Vector2(0, -168)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Blue/Block25"]
+texture = ExtResource("5_fcfvj")
+centered = false
+
+[node name="Block26" parent="Blue" instance=ExtResource("4_4nkto")]
+position = Vector2(80, -168)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Blue/Block26"]
+texture = ExtResource("5_fcfvj")
+centered = false
+
+[node name="Block27" parent="Blue" instance=ExtResource("4_4nkto")]
+position = Vector2(160, -168)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Blue/Block27"]
+texture = ExtResource("5_fcfvj")
+centered = false
+
+[node name="Block28" parent="Blue" instance=ExtResource("4_4nkto")]
+position = Vector2(240, -168)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Blue/Block28"]
+texture = ExtResource("5_fcfvj")
+centered = false
+
+[node name="Block29" parent="Blue" instance=ExtResource("4_4nkto")]
+position = Vector2(320, -168)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Blue/Block29"]
+texture = ExtResource("5_fcfvj")
+centered = false
+
+[node name="Block30" parent="Blue" instance=ExtResource("4_4nkto")]
+position = Vector2(400, -168)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Blue/Block30"]
+texture = ExtResource("5_fcfvj")
+centered = false
+
+[node name="Block31" parent="Blue" instance=ExtResource("4_4nkto")]
+position = Vector2(480, -168)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Blue/Block31"]
+texture = ExtResource("5_fcfvj")
+centered = false
+
+[node name="Block32" parent="Blue" instance=ExtResource("4_4nkto")]
+position = Vector2(560, -168)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Blue/Block32"]
+texture = ExtResource("5_fcfvj")
+centered = false
+
+[node name="Green" type="Node2D" parent="."]
+position = Vector2(0, 96)
+
+[node name="Block17" parent="Green" instance=ExtResource("4_4nkto")]
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Green/Block17"]
+texture = ExtResource("7_2y5yt")
+centered = false
+
+[node name="Block18" parent="Green" instance=ExtResource("4_4nkto")]
+position = Vector2(80, 0)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Green/Block18"]
+texture = ExtResource("7_2y5yt")
+centered = false
+
+[node name="Block19" parent="Green" instance=ExtResource("4_4nkto")]
+position = Vector2(160, 0)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Green/Block19"]
+texture = ExtResource("7_2y5yt")
+centered = false
+
+[node name="Block20" parent="Green" instance=ExtResource("4_4nkto")]
+position = Vector2(240, 0)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Green/Block20"]
+texture = ExtResource("7_2y5yt")
+centered = false
+
+[node name="Block21" parent="Green" instance=ExtResource("4_4nkto")]
+position = Vector2(320, 0)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Green/Block21"]
+texture = ExtResource("7_2y5yt")
+centered = false
+
+[node name="Block22" parent="Green" instance=ExtResource("4_4nkto")]
+position = Vector2(400, 0)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Green/Block22"]
+texture = ExtResource("7_2y5yt")
+centered = false
+
+[node name="Block23" parent="Green" instance=ExtResource("4_4nkto")]
+position = Vector2(480, 0)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Green/Block23"]
+texture = ExtResource("7_2y5yt")
+centered = false
+
+[node name="Block24" parent="Green" instance=ExtResource("4_4nkto")]
+position = Vector2(560, 0)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Green/Block24"]
+texture = ExtResource("7_2y5yt")
+centered = false
+
+[node name="Purple" type="Node2D" parent="."]
+
+[node name="Block9" parent="Purple" instance=ExtResource("4_4nkto")]
+position = Vector2(0, 120)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Purple/Block9"]
+texture = ExtResource("8_2os1m")
+centered = false
+
+[node name="Block10" parent="Purple" instance=ExtResource("4_4nkto")]
+position = Vector2(80, 120)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Purple/Block10"]
+texture = ExtResource("8_2os1m")
+centered = false
+
+[node name="Block11" parent="Purple" instance=ExtResource("4_4nkto")]
+position = Vector2(160, 120)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Purple/Block11"]
+texture = ExtResource("8_2os1m")
+centered = false
+
+[node name="Block12" parent="Purple" instance=ExtResource("4_4nkto")]
+position = Vector2(240, 120)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Purple/Block12"]
+texture = ExtResource("8_2os1m")
+centered = false
+
+[node name="Block13" parent="Purple" instance=ExtResource("4_4nkto")]
+position = Vector2(320, 120)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Purple/Block13"]
+texture = ExtResource("8_2os1m")
+centered = false
+
+[node name="Block14" parent="Purple" instance=ExtResource("4_4nkto")]
+position = Vector2(400, 120)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Purple/Block14"]
+texture = ExtResource("8_2os1m")
+centered = false
+
+[node name="Block15" parent="Purple" instance=ExtResource("4_4nkto")]
+position = Vector2(480, 120)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Purple/Block15"]
+texture = ExtResource("8_2os1m")
+centered = false
+
+[node name="Block16" parent="Purple" instance=ExtResource("4_4nkto")]
+position = Vector2(560, 120)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Purple/Block16"]
+texture = ExtResource("8_2os1m")
+centered = false
+
+[node name="Red" type="Node2D" parent="."]
+
+[node name="Block" parent="Red" instance=ExtResource("4_4nkto")]
+position = Vector2(0, 144)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Red/Block"]
+texture = ExtResource("5_4nkto")
+centered = false
+
+[node name="Block2" parent="Red" instance=ExtResource("4_4nkto")]
+position = Vector2(80, 144)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Red/Block2"]
+texture = ExtResource("5_4nkto")
+centered = false
+
+[node name="Block3" parent="Red" instance=ExtResource("4_4nkto")]
+position = Vector2(160, 144)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Red/Block3"]
+texture = ExtResource("5_4nkto")
+centered = false
+
+[node name="Block4" parent="Red" instance=ExtResource("4_4nkto")]
+position = Vector2(240, 144)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Red/Block4"]
+texture = ExtResource("5_4nkto")
+centered = false
+
+[node name="Block5" parent="Red" instance=ExtResource("4_4nkto")]
+position = Vector2(320, 144)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Red/Block5"]
+texture = ExtResource("5_4nkto")
+centered = false
+
+[node name="Block6" parent="Red" instance=ExtResource("4_4nkto")]
+position = Vector2(400, 144)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Red/Block6"]
+texture = ExtResource("5_4nkto")
+centered = false
+
+[node name="Block7" parent="Red" instance=ExtResource("4_4nkto")]
+position = Vector2(480, 144)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Red/Block7"]
+texture = ExtResource("5_4nkto")
+centered = false
+
+[node name="Block8" parent="Red" instance=ExtResource("4_4nkto")]
+position = Vector2(560, 144)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Red/Block8"]
+texture = ExtResource("5_4nkto")
+centered = false
