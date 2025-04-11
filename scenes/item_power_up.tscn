@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpxatw0ea6cyp"]
+
+[ext_resource type="Script" uid="uid://bkd80nqqx0g8n" path="res://scripts/item_power_up.gd" id="1_jm7mh"]
+[ext_resource type="Texture2D" uid="uid://077i5x76rsay" path="res://sprites/Star.png" id="2_bll67"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ygl7w"]
+radius = 14.0
+
+[node name="ItemPowerUp" type="CharacterBody2D"]
+position = Vector2(320, 120)
+collision_layer = 64
+collision_mask = 9
+script = ExtResource("1_jm7mh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_bll67")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ygl7w")
