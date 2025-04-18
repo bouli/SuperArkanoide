@@ -10,6 +10,8 @@ func _ready() -> void:
 func _on_death_zone_body_entered(body: Node2D) -> void:
 	if body.name == "Ball":
 		timer_reset.start()
+	else:
+		body.queue_free()
 		
 	pass # Replace with function body.
 

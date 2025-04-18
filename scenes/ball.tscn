@@ -17,3 +17,8 @@ texture = ExtResource("1_7s4qf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_cxlvu")
+
+[node name="ItemPowerUpTimer" type="Timer" parent="."]
+wait_time = 5.0
+
+[connection signal="timeout" from="ItemPowerUpTimer" to="." method="_on_item_power_up_timer_timeout"]
