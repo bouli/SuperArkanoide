@@ -10,5 +10,4 @@ func _physics_process(delta: float) -> void:
 func _on_body_entered(body: Node2D) -> void:
 	queue_free()
 	body.queue_free()
-	
-	pass # Replace with function body.
+	GameManager._add_points(1)

@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://oqaufoy0lxns"]
+
+[ext_resource type="Script" uid="uid://fx77m28dpwbq" path="res://scripts/points_canvas.gd" id="1_7lksw"]
+[ext_resource type="FontFile" uid="uid://bafpk0yji615k" path="res://fonts/Arial.ttf" id="1_uoufh"]
+
+[node name="PointsCanvas" type="CanvasLayer"]
+script = ExtResource("1_7lksw")
+
+[node name="LabelPoints" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("1_uoufh")
+theme_override_font_sizes/font_size = 25
+text = "Points: 0"
+
+[node name="LabelRecord" type="Label" parent="."]
+offset_left = 502.0
+offset_right = 637.0
+offset_bottom = 42.0
+theme_override_fonts/font = ExtResource("1_uoufh")
+theme_override_font_sizes/font_size = 25
+text = "Record: 0"
+horizontal_alignment = 2

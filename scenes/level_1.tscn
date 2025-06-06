@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cyh5sk4uq12nv"]
+[gd_scene load_steps=11 format=3 uid="uid://cyh5sk4uq12nv"]
 
 [ext_resource type="PackedScene" uid="uid://dq5ak156c2j34" path="res://scenes/environment.tscn" id="1_rus8k"]
 [ext_resource type="PackedScene" uid="uid://bvym4fq3yg5bd" path="res://scenes/player.tscn" id="2_5xbjy"]
@@ -9,20 +9,25 @@
 [ext_resource type="Texture2D" uid="uid://bi07xcbeokot7" path="res://sprites/BlueBlock.png" id="5_fcfvj"]
 [ext_resource type="Texture2D" uid="uid://dgglxopanbln" path="res://sprites/GreenBlock.png" id="7_2y5yt"]
 [ext_resource type="Texture2D" uid="uid://c4p5rmtw2v008" path="res://sprites/PurpleBlock.png" id="8_2os1m"]
+[ext_resource type="PackedScene" uid="uid://oqaufoy0lxns" path="res://scenes/points_canvas.tscn" id="10_2y5yt"]
 
 [node name="Level1" type="Node2D"]
+position = Vector2(0, -1)
 
 [node name="Environment" parent="." instance=ExtResource("1_rus8k")]
 metadata/_edit_lock_ = true
 
 [node name="Player" parent="." instance=ExtResource("2_5xbjy")]
 position = Vector2(320, 432)
+metadata/_edit_lock_ = true
 
 [node name="Ball" parent="." instance=ExtResource("3_4nkto")]
 position = Vector2(320, 401)
+metadata/_edit_lock_ = true
 
 [node name="Yellow" type="Node2D" parent="."]
 position = Vector2(0, 480)
+metadata/_edit_lock_ = true
 
 [node name="Block33" parent="Yellow" instance=ExtResource("4_4nkto")]
 position = Vector2(0, -432)
@@ -33,7 +38,7 @@ texture = ExtResource("5_e3sih")
 centered = false
 
 [node name="Block34" parent="Yellow" instance=ExtResource("4_4nkto")]
-position = Vector2(80, -430)
+position = Vector2(80, -432)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Yellow/Block34"]
@@ -90,6 +95,7 @@ centered = false
 
 [node name="Blue" type="Node2D" parent="."]
 position = Vector2(0, 240)
+metadata/_edit_lock_ = true
 
 [node name="Block25" parent="Blue" instance=ExtResource("4_4nkto")]
 position = Vector2(0, -168)
@@ -157,6 +163,7 @@ centered = false
 
 [node name="Green" type="Node2D" parent="."]
 position = Vector2(0, 96)
+metadata/_edit_lock_ = true
 
 [node name="Block17" parent="Green" instance=ExtResource("4_4nkto")]
 metadata/_edit_group_ = true
@@ -222,6 +229,7 @@ texture = ExtResource("7_2y5yt")
 centered = false
 
 [node name="Purple" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
 
 [node name="Block9" parent="Purple" instance=ExtResource("4_4nkto")]
 position = Vector2(0, 120)
@@ -288,6 +296,7 @@ texture = ExtResource("8_2os1m")
 centered = false
 
 [node name="Red" type="Node2D" parent="."]
+metadata/_edit_lock_ = true
 
 [node name="Block" parent="Red" instance=ExtResource("4_4nkto")]
 position = Vector2(0, 144)
@@ -352,3 +361,5 @@ metadata/_edit_group_ = true
 [node name="Sprite2D" type="Sprite2D" parent="Red/Block8"]
 texture = ExtResource("5_4nkto")
 centered = false
+
+[node name="PointsCanvas" parent="." instance=ExtResource("10_2y5yt")]
